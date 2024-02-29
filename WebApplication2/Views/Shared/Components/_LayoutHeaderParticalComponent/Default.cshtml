@@ -1,0 +1,31 @@
+﻿ <!-- header -->
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <h1>
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    @ViewContext.RouteData.Values["controller"].ToString() <small>Siteni Yönet</small>
+                </h1>
+            </div>
+            <div class="col-md-2">
+                <div class="dropdown create">
+                    <button class="btn btn-default dropdown-toggle:button"
+                            id="dropdownMenu1"
+                            data-toggle="dropdown">
+                        Create Content
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li>
+                            <a type="button" data-toggle="modal" data-target="#addPage">Sayfa Ekle</a>
+                        </li>
+                        <li><a href="#">Yazı Ekle</a></li>
+                        <li><a href="#">Kullanıcı Ekle</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+

@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="panel-heading main-color-bg">
+    <h3 class="panel-title">Kullanıcılar</h3>
+</div>
+<div class="panel-body">
+
+    
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <input type="text"
+                       class="form-control"
+                       placeholder="Kullanıcıları Filtrele..." />
+            </div>
+        </div>
+
+        <br />
+
+        <!-- users table -->
+        <table class="table table-striped table-hover">
+            <tr>
+                <th>Ad Soyad</th>
+                <th>Email</th>
+                <th>Tarih</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Mesut Demirci</td>
+                <td>mesutdemircits@gmail.com</td>
+                <td>28/02/2024</td>
+                <td>
+                    <a class="btn btn-default" href="/User/Update">Düzenle</a>
+                    <a class="btn btn-danger" href="#">Sil</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Ayşe Köksal</td>
+                <td>ayse54@yahoo.com</td>
+                <td>01/02/2021</td>
+                <td>
+                    <a class="btn btn-default" href="/User/Update">Düzenle</a>
+                    <a class="btn btn-danger" href="#">Sil</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Hasan Aydın</td>
+                <td>hasanaydin85@gmail.com</td>
+                <td>03/08/2020</td>
+                <td>
+                    <a class="btn btn-default" href="/User/Update">Düzenle</a>
+                    <a class="btn btn-danger" href="#">Sil</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Sertap Karasu</td>
+                <td>skarasu@gmail.com</td>
+                <td>10/09/1999</td>
+                <td>
+                    <a class="btn btn-default" href="/User/Update">Düzenle</a>
+                    <a class="btn btn-danger" href="#">Sil</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
